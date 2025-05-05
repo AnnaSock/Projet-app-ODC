@@ -9,7 +9,7 @@ require_once __DIR__ .chemins::CONTROLLER_CHANGER_MDP -> value;
 require_once __DIR__ .Chemins::CONTROLLER_PROMOTION -> value;
 
 function mes_request(): void{
-    $page = $_REQUEST['page'] ?? 'connexion';
+    $page = $_REQUEST['page'] ?? 'page_connexion';
     match($page){
          'page_connexion'=> mes_actions_connexion(),
          'int_mdp'=> mes_actions_int_mdp(),
