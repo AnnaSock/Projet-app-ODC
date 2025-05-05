@@ -1,0 +1,25 @@
+<?php
+
+
+
+declare(strict_types=1);
+require_once __DIR__ . "/model.php";
+global $models;
+
+$model_changermdp= [
+    'comparer_mdp' => function(string $nouveau_mdp):bool {
+        global $models;
+        $fichier_json = $models["json_to_array"]();
+        $users = $fichier_json['utilisateurs'];
+
+        $utilisateurTrouve = array_filter($users, function ($user) use ($nouveau_mdp): bool {
+            return $user['password'] !== $nouveau_mdp;
+        });
+    
+        return !empty($utilisateurTrouve);
+},
+
+
+
+
+];

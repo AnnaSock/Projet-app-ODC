@@ -1,0 +1,20 @@
+{
+    "utilisateurs": [
+      {
+        "login": "admin@outlook.com",
+        "password": "adminpass",
+        "profil": "Admin"
+      },
+      {
+        "login": "vigile@outlook.com",
+        "password": "vigilepass",
+        "profil": "Vigile"
+      },
+      {
+        "login": "apprenant@outlook.com",
+        "password": "apprenantpass",
+        "profil": "Apprenant"
+      }
+    ]
+  }
+  
