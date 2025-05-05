@@ -1,13 +1,11 @@
 <?php
+require_once __DIR__ ."/../enums/chemins.php";
+require_once __DIR__ .Chemins::CHEF_MODEL -> value;
+require_once __DIR__ .chemins::FONCTION -> value;
 
-
-
-declare(strict_types=1);
-require_once __DIR__ . "/model.php";
-global $models;
 
 $model_changermdp= [
-    'comparer_mdp' => function(string $nouveau_mdp):bool {
+    Fonction::COMPARER_MDP -> value => function(string $nouveau_mdp):bool {
         global $models;
         $fichier_json = $models["json_to_array"]();
         $users = $fichier_json['utilisateurs'];

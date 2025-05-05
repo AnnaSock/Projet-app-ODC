@@ -1,8 +1,12 @@
 <?php
-require_once __DIR__ . "/model.php";
+require_once __DIR__ ."/../enums/chemins.php";
+require_once __DIR__ .chemins::FONCTION -> value;
+
+require_once __DIR__ .Chemins::CHEF_MODEL -> value;
+
 
 $model_connexion = [
-    'se_connecter' => function(string $login, string $password):bool {
+    Fonction::SE_CONNECTER -> value => function(string $login, string $password):bool {
         global $models;
         $fichier_json = $models["json_to_array"]();
         $users = $fichier_json['utilisateurs'];

@@ -15,5 +15,8 @@ enum Fonction: string{
     case unicite = "unicite";
     case json_to_array ="json_to_array";
     case array_to_json = "array_to_json";
+    case COMPARER_MDP = "comparer_mdp";
+    case SE_CONNECTER = "se_connecter";
+    case ENTRER = "Entrer";
 
 }

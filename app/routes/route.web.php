@@ -1,11 +1,12 @@
 <?php
-require_once __DIR__ ."/../enums/fonction.php";
-require_once __DIR__ .'/../controllers/error.controller.php';
-require_once __DIR__ .'/../controllers/controller.connexion.php';
-require_once __DIR__ .'/../controllers/controller.int.mdp.php';
-require_once __DIR__ .'/../controllers/controller.layout.php';
-require_once __DIR__ .'/../controllers/controller.changermdp.php';
-require_once __DIR__ .'/../controllers/controller.promotion.php';
+require_once __DIR__ ."/../enums/chemins.php";
+require_once __DIR__ .Chemins::FONCTION -> value;
+require_once __DIR__ .Chemins::ERROR_CONTROLLER -> value;
+require_once __DIR__ .Chemins::CONTROLLER_CONNEXION -> value;
+require_once __DIR__ .Chemins::CONTROLLER_INT_MDP -> value;
+require_once __DIR__ .Chemins::CONTROLLER_LAYOUT -> value;
+require_once __DIR__ .chemins::CONTROLLER_CHANGER_MDP -> value;
+require_once __DIR__ .Chemins::CONTROLLER_PROMOTION -> value;
 
 function mes_request(): void{
     $page = $_REQUEST['page'] ?? 'connexion';

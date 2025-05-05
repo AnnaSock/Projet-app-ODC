@@ -1,5 +1,7 @@
 <?php 
-require_once __DIR__ ."/controller.php";
+
+require_once __DIR__ ."/../enums/chemins.php";
+require_once __DIR__ .Chemins::CHEF_CONTROLLER -> value;
 
 
  function mes_actions_promotion(){
