@@ -1,6 +1,12 @@
 <?php
+<<<<<<< HEAD
 require_once __DIR__ ."/../models/model.int.mdp.php";
 // require_once __DIR__ ."/controller.php";
+=======
+require_once __DIR__ ."/../enums/chemins.php";
+require_once __DIR__ .Chemins::MODEL_INT_MDP -> value;
+require_once __DIR__ .Chemins::CHEF_CONTROLLER -> value;
+>>>>>>> b89b887b3f92b24d80b73a84ca27ebb08e03a3e7
 
 
 function mes_actions_int_mdp(){

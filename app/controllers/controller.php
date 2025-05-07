@@ -1,8 +1,16 @@
 <?php
+<<<<<<< HEAD
 require_once __DIR__ . '/../services/session.service.php';
 require_once __DIR__ . "/error.controller.php";
 require_once __DIR__ . '/../services/validator.service.php';
 require_once __DIR__ ."/../enums/fonction.php";
+=======
+require_once __DIR__ ."/../enums/chemins.php";
+require_once __DIR__ .Chemins::SESSION_SERVICE -> value;
+require_once __DIR__ .Chemins::ERROR_CONTROLLER -> value;
+require_once __DIR__ .Chemins::VALIDATOR_SERVICE -> value;
+require_once __DIR__ .Chemins::FONCTION -> value;
+>>>>>>> b89b887b3f92b24d80b73a84ca27ebb08e03a3e7
 
 function redirectToRoute(string $url): void {
     header('Location: ' . $url);

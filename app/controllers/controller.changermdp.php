@@ -1,6 +1,7 @@
 <?php
-require_once __DIR__ ."/../models/model.changermdp.php";
-require_once __DIR__ ."/controller.php";
+require_once __DIR__ ."/../enums/chemins.php";
+require_once __DIR__ .Chemins::MODEL_CHANGER_MDP -> value;
+require_once __DIR__ .Chemins::CHEF_CONTROLLER -> value;
 
 function mes_actions_changer_mdp(){
     $actions= $_REQUEST["action"] ?? 'changer_mdp';

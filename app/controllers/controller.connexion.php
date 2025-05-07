@@ -1,7 +1,7 @@
 <?php
-
-require_once __DIR__ . "/../models/model.connexion.php";
-require_once __DIR__ . "/controller.php";
+require_once __DIR__ ."/../enums/chemins.php";
+require_once __DIR__ .chemins::MODEL_CONNEXION -> value;
+require_once __DIR__ .Chemins::CHEF_CONTROLLER -> value;
 
 
 function mes_actions_connexion(){
@@ -20,18 +20,18 @@ function connexion(){
         $password = $session_service['requet_post']('password');
 
         if ($validator_service[FONCTION::VALIDATOR_CONNEXION -> value]($login, $password)){
-            return render('/connexions/page_connexion.html.php',['erreurs' => $GLOBALS['erreurs'], ]);
+            return render(chemins::VUE_CONNEXION -> value,['erreurs' => $GLOBALS['erreurs'], ]);
         }
 
         $Connecter = $model_connexion['se_connecter']($login, $password);
 
         if ($Connecter){
-            return     render('/base.layout.html.php');
+            return     render(chemins::VUE_LAYOUT -> value);
 
         } else {
-            return render('/connexions/page_connexion.html.php',[ 'erreurs' => $GLOBALS['erreurs'] ]);
+            return render(chemins::VUE_CONNEXION -> value,[ 'erreurs' => $GLOBALS['erreurs'] ]);
         }
     } else {
-        return render('/connexions/page_connexion.html.php',[ 'erreurs' => $GLOBALS['erreurs'] ]);
+        return render(chemins::VUE_CONNEXION -> value,[ 'erreurs' => $GLOBALS['erreurs'] ]);
     }
 }
