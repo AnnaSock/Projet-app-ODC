@@ -1,9 +1,10 @@
 
 <?php
-require_once __DIR__ ."/../controllers/error.controller.php";
-require_once __DIR__ ."/../enums/message.php";
-require_once __DIR__ ."/../enums/fonction.php";
-require_once __DIR__ ."/../models/model.php";
+require_once __DIR__ ."/../enums/chemins.php";
+require_once __DIR__ .Chemins::ERROR_CONTROLLER -> value;
+require_once __DIR__ .chemins::FONCTION -> value;
+require_once __DIR__ .Chemins::MESSAGE -> value;
+require_once __DIR__ .Chemins::RELATIF_CHEF_MODEL -> value;
 
 
 

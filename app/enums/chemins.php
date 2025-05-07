@@ -31,6 +31,7 @@ enum Chemins: string {
   case VUE_CHANGER_MDP= "/connexions/page_changermdp.html.php";
   case VUE_INT_MDP= "/int.mdp.html.php";
   case VUE_LAYOUT= "/base.layout.html.php";
+  case RELATIF_CHEF_MODEL= "/../models/model.php";
 
 
 
